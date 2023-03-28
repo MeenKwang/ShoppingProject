@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="Commit first time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Lgt7ZgIS3KzDWEvrm518yYGrq8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Code/SpringBoot/ShoppingProject/ShoppingCommon/src/main/java/com/shopping/common/exception",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "0869f9e8c298063c540d7b30340b5d8b",
+    "ts.external.directory.path": "D:\\Code\\SpringBoot\\ShoppingProject\\ShoppingWebParent\\ShopManagementWeb\\src\\main\\resources\\shopping-manage-frontend\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.shopping.admin.dto" />
+      <recent name="com.shopping.admin.security" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingCommon\src\main\java\com\shopping\common\exception" />
+      <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingWebParent\ShopManagementWeb" />
+      <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingCommon\src\main\java\com\shopping\common\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shopping.admin.security" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ShopManagementWebApplication">
+    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" requestIdentifier="#10" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (shopping-manage-frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="SaleWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SaleWeb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shopping.SaleWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopManagementWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="ShopManagementWeb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shopping.ShopManagementWebApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/ShoppingWebParent/ShopManagementWeb" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server (shopping-manage-frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/ShoppingWebParent/ShopManagementWeb/src/main/resources/shopping-manage-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #10" />
+      <item itemvalue="HTTP Request.generated-requests | #11" />
+      <item itemvalue="JavaScript Debug.Angular Application (shopping-manage-frontend)" />
+      <item itemvalue="npm.Angular CLI Server (shopping-manage-frontend)" />
+      <item itemvalue="Spring Boot.SaleWebApplication" />
+      <item itemvalue="Spring Boot.ShopManagementWebApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #11" />
+        <item itemvalue="HTTP Request.generated-requests | #10" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="" />
+      <created>1676304388616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676304388616</updated>
+      <workItem from="1676304390265" duration="511000" />
+      <workItem from="1676304977310" duration="7390000" />
+      <workItem from="1677169002726" duration="6672000" />
+      <workItem from="1677253413695" duration="811000" />
+      <workItem from="1677255602030" duration="3041000" />
+      <workItem from="1677262574275" duration="72094000" />
+      <workItem from="1677869389128" duration="39000" />
+      <workItem from="1677869456691" duration="52000" />
+      <workItem from="1677869684433" duration="13949000" />
+      <workItem from="1678067623843" duration="4518000" />
+      <workItem from="1678194957463" duration="6821000" />
+      <workItem from="1678336964923" duration="17783000" />
+      <workItem from="1678414678046" duration="2948000" />
+      <workItem from="1678435855228" duration="607000" />
+      <workItem from="1678668112335" duration="2783000" />
+      <workItem from="1678689648251" duration="5708000" />
+      <workItem from="1678706626228" duration="4058000" />
+      <workItem from="1678723652622" duration="2523000" />
+      <workItem from="1678771848246" duration="2092000" />
+      <workItem from="1678798154917" duration="4366000" />
+      <workItem from="1678859239280" duration="18963000" />
+      <workItem from="1678991816218" duration="4608000" />
+      <workItem from="1679028026033" duration="3271000" />
+      <workItem from="1679062619729" duration="2618000" />
+      <workItem from="1679158991311" duration="17679000" />
+      <workItem from="1679308571132" duration="3318000" />
+      <workItem from="1679331226704" duration="5426000" />
+      <workItem from="1679472523495" duration="13077000" />
+      <workItem from="1679544942448" duration="7121000" />
+      <workItem from="1679649706061" duration="2245000" />
+      <workItem from="1679733776849" duration="64000" />
+      <workItem from="1679741766642" duration="7620000" />
+      <workItem from="1679833403710" duration="8096000" />
+      <workItem from="1679890751230" duration="5954000" />
+      <workItem from="1679990105987" duration="6530000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit first time">
+      <created>1680010589158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680010589158</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit first time">
+      <created>1680010603856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680010603856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:software.amazon.awssdk:sdk-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ShoopingCommon" />
+      <path value="$PROJECT_DIR$/ShopManagementWeb" />
+    </ignored-roots>
+    <MESSAGE value="Commit first time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit first time" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
