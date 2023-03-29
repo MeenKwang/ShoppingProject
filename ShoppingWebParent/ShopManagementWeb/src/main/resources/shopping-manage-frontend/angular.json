@@ -22,7 +22,8 @@
               "src/favicon.ico",
               "src/assets",
               {"glob": "**/*", "input": "../../../../user-photos", "output": "./user-photos/"},
-              {"glob": "**/*", "input": "../../../../../category-images", "output": "./category-images/"}
+              {"glob": "**/*", "input": "../../../../../category-images", "output": "./category-images/"},
+              {"glob": "**/*", "input": "../../../../../brand-logos", "output": "./brand-logos/"}
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",

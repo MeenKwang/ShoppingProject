@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="Commit first time">
+    <list default="true" id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="Commit second time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,30 +43,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Code/SpringBoot/ShoppingProject/ShoppingCommon/src/main/java/com/shopping/common/exception",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "0869f9e8c298063c540d7b30340b5d8b",
-    "ts.external.directory.path": "D:\\Code\\SpringBoot\\ShoppingProject\\ShoppingWebParent\\ShopManagementWeb\\src\\main\\resources\\shopping-manage-frontend\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/SpringBoot/ShoppingProject/ShoppingWebParent/ShopManagementWeb/src/main/java/com/shopping/admin/exception&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0869f9e8c298063c540d7b30340b5d8b&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Code\\SpringBoot\\ShoppingProject\\ShoppingWebParent\\ShopManagementWeb\\src\\main\\resources\\shopping-manage-frontend\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.shopping.admin.dto" />
       <recent name="com.shopping.admin.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingWebParent\ShopManagementWeb\src\main\java\com\shopping\admin\exception" />
       <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingCommon\src\main\java\com\shopping\common\exception" />
       <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingWebParent\ShopManagementWeb" />
       <recent name="D:\Code\SpringBoot\ShoppingProject\ShoppingCommon\src\main\java\com\shopping\common\entity" />
@@ -180,7 +181,10 @@
       <workItem from="1679741766642" duration="7620000" />
       <workItem from="1679833403710" duration="8096000" />
       <workItem from="1679890751230" duration="5954000" />
-      <workItem from="1679990105987" duration="6530000" />
+      <workItem from="1679990105987" duration="9312000" />
+      <workItem from="1680018881864" duration="1882000" />
+      <workItem from="1680022329691" duration="6486000" />
+      <workItem from="1680057955035" duration="3097000" />
     </task>
     <task id="LOCAL-00001" summary="Commit first time">
       <created>1680010589158</created>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680010603856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit second time">
+      <created>1680010972312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680010972312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +242,8 @@
       <path value="$PROJECT_DIR$/ShopManagementWeb" />
     </ignored-roots>
     <MESSAGE value="Commit first time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit first time" />
+    <MESSAGE value="Commit second time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit second time" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,6 +2,7 @@ package com.shopping.admin.service.impl;
 
 import com.shopping.admin.dto.CategoryDTO;
 import com.shopping.admin.dto.CategoryFormDto;
+import com.shopping.admin.dto.CategoryListDto;
 import com.shopping.admin.dto.CategorySelect;
 import com.shopping.admin.dto.mapper.CategoryFormMapper;
 import com.shopping.admin.dto.mapper.CategoryMapper;
@@ -40,7 +41,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<CategoryDTO> listByPage(int pageNum, String sortField, String sortDir, String nameSearch, int pageSize) {
+    public CategoryListDto listByPage(int pageNum, String sortField, String sortDir, String nameSearch, int pageSize) {
         Sort sort = Sort.by(sortField);
         if(sortDir.equals("asc")) {
             sort = sort.ascending();
@@ -58,13 +59,19 @@ public class CategoryServiceImpl implements CategoryService {
         }
 
         List<Category> rootCategories = pageCategories.getContent();
+        CategoryListDto categoryListDto = new CategoryListDto();
+        categoryListDto.setTotalElements(pageCategories.getTotalElements());
+        categoryListDto.setTotalPages(pageCategories.getTotalPages());
 
         if(nameSearch != null && !nameSearch.isEmpty()) {
             List<CategoryDTO> dtosList = rootCategories.stream()
                     .map(category -> categoryMapper.categoryToCategoryDTO(category)).collect(Collectors.toList());
-            return dtosList;
+            categoryListDto.setCategoriesList(dtosList);
+            return categoryListDto;
         } else {
-            return listHierarchicalCategories(rootCategories, sortDir, sortField);
+            List<CategoryDTO> lstCategories = listHierarchicalCategories(rootCategories, sortDir, sortField);
+            categoryListDto.setCategoriesList(lstCategories);
+            return categoryListDto;
         }
 
     }

@@ -3,6 +3,7 @@ package com.shopping.admin.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shopping.admin.dto.CategoryDTO;
 import com.shopping.admin.dto.CategoryFormDto;
+import com.shopping.admin.dto.CategoryListDto;
 import com.shopping.admin.dto.CategorySelect;
 import com.shopping.admin.dto.mapper.CategoryFormMapper;
 import com.shopping.admin.dto.mapper.CategoryMapper;
@@ -32,17 +33,17 @@ public class CategoryRestController {
     }
 
     @GetMapping("categories")
-    public ResponseEntity<List<CategoryDTO>> listFirstPage() {
+    public ResponseEntity<CategoryListDto> listFirstPage() {
         return listByPage(1, "name", "asc", null, 5);
     }
 
     @GetMapping("categories/page/{pageNum}")
-    public ResponseEntity<List<CategoryDTO>> listByPage(@PathVariable("pageNum") int pageNum, @RequestParam("sortField") String sortField,
+    public ResponseEntity<CategoryListDto> listByPage(@PathVariable("pageNum") int pageNum, @RequestParam("sortField") String sortField,
                                                         @RequestParam("sortDir") String sortDir, @RequestParam(value = "nameSearch", required = false) String nameSearch,
                                                         @RequestParam("pageSize") int pageSize)
     {
-        List<CategoryDTO> categoryDTOS = categoryService.listByPage(pageNum, sortField, sortDir, nameSearch, pageSize);
-        return ResponseEntity.ok(categoryDTOS);
+        CategoryListDto categoryListDtos = categoryService.listByPage(pageNum, sortField, sortDir, nameSearch, pageSize);
+        return ResponseEntity.ok(categoryListDtos);
     }
 
     @GetMapping("categories/list_categories_used_in_form")
@@ -66,6 +67,10 @@ public class CategoryRestController {
                 FileUploadUtil.saveFile(uploadDir, fileName, image);
                 return ResponseEntity.ok().body(category);
             } else {
+                if(categoryDTO.getId() != null) {
+                    Category savedCategory = categoryService.save(categoryFormMapper.categoryFormDtoToCategory(categoryDTO));
+                    return ResponseEntity.ok().body(savedCategory);
+                }
                 return ResponseEntity.badRequest().body(null);
             }
         } catch (IOException e) {

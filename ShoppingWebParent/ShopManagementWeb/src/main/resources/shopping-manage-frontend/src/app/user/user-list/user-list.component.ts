@@ -7,6 +7,7 @@ import { map, startWith } from 'rxjs';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmModalComponent } from 'src/app/modal/confirm-modal/confirm-modal.component';
+import { NotifyModalComponent } from 'src/app/modal/notify-modal/notify-modal.component';
 
 @Component({
   selector: 'app-user-list',
@@ -115,18 +116,25 @@ export class UserListComponent implements OnInit {
     modalRef.componentInstance.emitService.subscribe((emmitedValue : any) => {
       this.message = emmitedValue;
       if(this.message === "Successfully!") {
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This user has been deleted successfully!";
         this.getUserList();
         this.sortField = "firstName";
         this.targetSortField = "firstName";
         this.sortDir = "asc";
+        this.firstNameSearch = "";
+        this.lastNameSearch = "";
+        this.emailSearch = "";
       } 
       
       if(this.message === "Cannot delete!") {
-        // do something
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This user cannot be deleted!";
       } 
       
       if(this.message === "Error response from server!") {
-        // do something
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This user cannot be deleted!";
       }
     });
   }

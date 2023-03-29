@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { faPenToSquare, faTrash, faSearch, faUserPlus, faFileExcel, faFileCsv, faFilePdf, faArrowUp, faArrowDown, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare, faTrash, faSearch, faUserPlus, faFileExcel, faFileCsv, faFilePdf, faArrowUp, faArrowDown, faEdit, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmModalComponent } from 'src/app/modal/confirm-modal/confirm-modal.component';
+import { NotifyModalComponent } from 'src/app/modal/notify-modal/notify-modal.component';
 import { Category } from 'src/app/model/category.model';
 import { CategoryService } from 'src/app/service/category/category.service';
 @Component({
@@ -11,7 +12,7 @@ import { CategoryService } from 'src/app/service/category/category.service';
   styleUrls: ['./category-list.component.css']
 })
 export class CategoryListComponent implements OnInit {
-
+  faPlusSquare = faPlusSquare;
   faEdit = faEdit;
   faTrash = faTrash;
   faSearch = faSearch;
@@ -48,7 +49,7 @@ export class CategoryListComponent implements OnInit {
   getFirstPage() {
     this.categoryService.listFirstPage().subscribe(
       (response : any) => {
-        this.categoriesList = response;
+        this.categoriesList = response.categoriesList;
         this.totalPages = response.totalPages;
         this.totalElements = response.totalElements;
       }
@@ -58,7 +59,7 @@ export class CategoryListComponent implements OnInit {
   getPageList() {
     this.categoryService.listCategoryByPage(this.pageNum, this.nameSearch, this.sortField, this.sortDir, this.pageSize).subscribe(
       (response : any) => {
-        this.categoriesList = response;
+        this.categoriesList = response.categoriesList;
         this.totalPages = response.totalPages;
         this.totalElements = response.totalElements;
       }
@@ -98,18 +99,23 @@ export class CategoryListComponent implements OnInit {
     modalRef.componentInstance.emitService.subscribe((emmitedValue : any) => {
       this.message = emmitedValue;
       if(this.message === "Successfully!") {
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This category has been delete successfully!";
         this.getPageList();
         this.sortField = "name";
         this.targetSortField = "name";
         this.sortDir = "asc";
+        this.nameSearch = "";
       } 
       
       if(this.message === "Cannot delete!") {
-        // do something
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This category cannot be deleted!";
       } 
       
       if(this.message === "Error response from server!") {
-        // do something
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This category cannot be deleted!";
       }
     });
   }

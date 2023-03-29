@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { Router, NavigationExtras, ActivatedRoute } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { debounceTime, interval, map, switchMap } from 'rxjs';
+import { NotifyModalComponent } from 'src/app/modal/notify-modal/notify-modal.component';
 import { Role } from 'src/app/model/role.model';
 import { UserForm } from 'src/app/model/user-form.model';
 import { RoleService } from 'src/app/service/role/role.service';
@@ -34,6 +36,7 @@ export class UserUpdateFormComponent implements OnInit {
     private router: Router,
     private uniqueEmailValidatorDirective: UniqueEmailValidatorDirective,
     private route: ActivatedRoute,
+    private modalService: NgbModal,
   ) { }
 
   ngOnInit(): void {
@@ -137,16 +140,13 @@ export class UserUpdateFormComponent implements OnInit {
     console.log(this.userFormModel);
     this.userService.create(this.userFormModel, this.userForm.controls["avatar"].value).subscribe({
       next: (response) => {
-        let naviData: NavigationExtras = {
-          queryParams: { data: "User updated successfully " }
-        };
-        this.router.navigate(["users"], naviData);
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This user has been update successfully!"
+        this.router.navigate(["users"]);
       },
       error: () => {
-        let naviData: NavigationExtras = {
-          queryParams: { data: "Error response from server " }
-        };
-        this.router.navigate(["users"], naviData);
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "Error when updating user!";
       }
     });
   }

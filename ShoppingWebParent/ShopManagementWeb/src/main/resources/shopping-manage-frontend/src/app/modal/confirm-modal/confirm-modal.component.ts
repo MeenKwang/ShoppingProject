@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { BrandService } from 'src/app/service/brand/brand.service';
 import { CategoryService } from 'src/app/service/category/category.service';
 import { UserService } from 'src/app/service/user/user.service';
 
@@ -16,6 +17,7 @@ export class ConfirmModalComponent implements OnInit {
     public activeModal: NgbActiveModal,
     private userService: UserService,
     private categoryService: CategoryService,
+    private brandService: BrandService
   ) { }
 
   ngOnInit(): void {
@@ -49,7 +51,18 @@ export class ConfirmModalComponent implements OnInit {
         }
       })
     } else if(this.object === "brand") {
-      console.log("ok");
+      this.brandService.delete(this.id).subscribe({
+        next: (response) => {
+          if(response === true) {
+            this.emitService.next("Successfully!");
+          } else {
+            this.emitService.next("Cannot delete!");
+          }
+        },
+        error: (error) => {
+          this.emitService.next("Error response from server!");
+        }
+      })
     }
 
     this.activeModal.close();

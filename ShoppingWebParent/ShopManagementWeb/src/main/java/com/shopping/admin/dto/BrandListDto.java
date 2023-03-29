@@ -8,7 +8,15 @@ public class BrandListDto {
     private Integer id;
     private String name;
     private String logo;
-    private Set<Category> categories;
+    private Set<CategorySelect> categories;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -26,11 +34,11 @@ public class BrandListDto {
         this.logo = logo;
     }
 
-    public Set<Category> getCategories() {
+    public Set<CategorySelect> getCategories() {
         return categories;
     }
 
-    public void setCategories(Set<Category> categories) {
+    public void setCategories(Set<CategorySelect> categories) {
         this.categories = categories;
     }
 }

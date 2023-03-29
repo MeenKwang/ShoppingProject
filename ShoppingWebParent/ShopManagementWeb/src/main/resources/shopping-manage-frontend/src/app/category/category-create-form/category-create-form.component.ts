@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NotifyModalComponent } from 'src/app/modal/notify-modal/notify-modal.component';
 import { CategoryForm } from 'src/app/model/category-form-model';
 import { CategorySelect } from 'src/app/model/category-select.model';
 import { CategoryService } from 'src/app/service/category/category.service';
@@ -22,6 +24,7 @@ export class CategoryCreateFormComponent implements OnInit {
     private categoryService: CategoryService,
     private fb: FormBuilder,
     private router: Router,
+    private modalService: NgbModal,
   ) { }
 
   ngOnInit(): void {
@@ -59,10 +62,13 @@ export class CategoryCreateFormComponent implements OnInit {
     this.bindValueToCategoryFormModel();
     this.categoryService.saveCategory(this.categoryFormModel, this.categoryForm.controls["image"].value).subscribe({
       next: (response) => {
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "This category has been created successfully!";
         this.router.navigate(["categories"]);
       },
       error: () => {
-
+        const modalRefNotify = this.modalService.open(NotifyModalComponent);
+        modalRefNotify.componentInstance.message = "Error when creating category!";
       }
     })
   }
