@@ -1,0 +1,18 @@
+.form-center {
+    padding-top: 3%;
+    margin: auto;
+    width: 80%;
+}
+
+.image-preview {
+    height: 100px;
+    width: auto;
+}
+
+a{
+    cursor: pointer;
+}
+
+.cke_chrome{
+    border-color: red; 
+}
