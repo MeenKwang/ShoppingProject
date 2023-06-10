@@ -1,8 +1,12 @@
 package com.shopping.admin.service;
 
 import com.shopping.common.entity.User;
+import jakarta.servlet.http.HttpServletResponse;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.data.domain.Page;
 
+import java.io.IOException;
 import java.util.List;
 
 
@@ -18,4 +22,6 @@ public interface UserService {
     public void delete(Integer id);
 
     User getUserById(Integer id);
+
+    public Workbook exportUserListToExcel() throws IOException;
 }

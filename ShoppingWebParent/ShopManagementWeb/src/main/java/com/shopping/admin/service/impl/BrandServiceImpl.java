@@ -2,6 +2,7 @@ package com.shopping.admin.service.impl;
 
 import com.shopping.admin.dto.BrandFormDto;
 import com.shopping.admin.dto.BrandListDto;
+import com.shopping.admin.dto.BrandSelectDto;
 import com.shopping.admin.dto.UserDTO;
 import com.shopping.admin.dto.mapper.BrandFormMapper;
 import com.shopping.admin.dto.mapper.BrandListMapper;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 @Service
@@ -90,5 +92,20 @@ public class BrandServiceImpl implements BrandService {
         } catch (Exception e) {
             throw new BrandNotFoundException("Could not find any brand with ID: " + id);
         }
+    }
+
+    @Override
+    public Brand get(Integer brandId) throws BrandNotFoundException {
+        try {
+            return brandRepository.findById(brandId).get();
+        } catch (NoSuchElementException e) {
+            throw new BrandNotFoundException("Could not find any brand with ID: " + brandId);
+        }
+    }
+
+    @Override
+    public List<BrandSelectDto> listBrandsUsedInForm() {
+        List<BrandSelectDto> brandSelectDtoList = brandRepository.findAllWithCustomObject();
+        return brandSelectDtoList;
     }
 }

@@ -91,4 +91,12 @@ public class ProductImage {
 		return "/product-images/" + product.getId() + "/extras/" + this.name;
 	}
 
+	@Override
+	public String toString() {
+		return "ProductImage{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", product=" + product +
+				'}';
+	}
 }

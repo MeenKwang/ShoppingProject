@@ -33,6 +33,13 @@ import { CategoryUpdateFormComponent } from './category/category-update-form/cat
 import { BrandCreateFormComponent } from './brand/brand-create-form/brand-create-form.component';
 import { BrandUpdateFormComponent } from './brand/brand-update-form/brand-update-form.component';
 import { NotifyModalComponent } from './modal/notify-modal/notify-modal.component';
+import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductFormComponent } from './product/product-form/product-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -56,7 +63,10 @@ import { NotifyModalComponent } from './modal/notify-modal/notify-modal.componen
     CategoryUpdateFormComponent,
     BrandCreateFormComponent,
     BrandUpdateFormComponent,
-    NotifyModalComponent
+    NotifyModalComponent,
+    ProductComponent,
+    ProductListComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +77,10 @@ import { NotifyModalComponent } from './modal/notify-modal/notify-modal.componen
     NgbModule,
     NgbModalModule,
     ReactiveFormsModule,
-    NgSelectModule
+    NgSelectModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    CKEditorModule
   ],
   providers: [
     UserService,
@@ -75,6 +88,7 @@ import { NotifyModalComponent } from './modal/notify-modal/notify-modal.componen
     CookieService,
     AuthGuard,
     CategoryService,
+    DatePipe,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,

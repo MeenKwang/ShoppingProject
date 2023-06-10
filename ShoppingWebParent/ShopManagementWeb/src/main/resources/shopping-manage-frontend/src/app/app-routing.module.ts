@@ -13,6 +13,9 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductFormComponent } from './product/product-form/product-form.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductComponent } from './product/product.component';
 import { UserFormComponent } from './user/user-form/user-form.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserUpdateFormComponent } from './user/user-update-form/user-update-form.component';
@@ -41,6 +44,13 @@ const routes: Routes = [
                 { path: 'new', component: BrandCreateFormComponent },
                 { path: 'edit/:id', component: BrandUpdateFormComponent }
               ]
+  },
+  { path: 'products', component: ProductComponent, canActivate: [AuthGuard], data: {roles: ["Admin", "Editor", "Salesperson", "Shipper"]},
+  children: [
+    { path: '',component: ProductListComponent },
+    { path: 'new', component: ProductFormComponent },
+    { path: 'edit/:id', component: ProductFormComponent }
+  ]
   },
   { path: 'login', component: LoginComponent },
   { path: 'forbidden', component: ForbiddenComponent },

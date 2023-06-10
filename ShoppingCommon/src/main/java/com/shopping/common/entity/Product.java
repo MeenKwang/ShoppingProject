@@ -7,17 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "products")
@@ -60,6 +50,7 @@ public class Product {
 	private String mainImage;
 	
 	@OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OrderBy("name ASC")
 	private Set<ProductImage> images = new HashSet<>();
 
 	@ManyToOne
@@ -219,11 +210,6 @@ public class Product {
 		this.brand = brand;
 	}
 
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + "]";
-	}
-
 	public Set<ProductImage> getImages() {
 		return images;
 	}
@@ -292,5 +278,32 @@ public class Product {
 			return price * ((100 - discountPercent) / 100);
 		}
 		return this.price;
+	}
+
+	@Override
+	public String toString() {
+		return "Product{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", alias='" + alias + '\'' +
+				", shortDescription='" + shortDescription + '\'' +
+				", fullDescription='" + fullDescription + '\'' +
+				", createdTime=" + createdTime +
+				", updatedTime=" + updatedTime +
+				", enabled=" + enabled +
+				", inStock=" + inStock +
+				", cost=" + cost +
+				", price=" + price +
+				", discountPercent=" + discountPercent +
+				", length=" + length +
+				", width=" + width +
+				", height=" + height +
+				", weight=" + weight +
+				", mainImage='" + mainImage + '\'' +
+				", images=" + images +
+				", category=" + category +
+				", brand=" + brand +
+				", details=" + details +
+				'}';
 	}
 }

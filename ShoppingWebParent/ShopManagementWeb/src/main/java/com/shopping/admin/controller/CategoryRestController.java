@@ -27,6 +27,7 @@ public class CategoryRestController {
     private final CategoryFormMapper categoryFormMapper;
 
     @Autowired
+
     public CategoryRestController(CategoryService categoryService, CategoryFormMapper categoryFormMapper) {
         this.categoryService = categoryService;
         this.categoryFormMapper = categoryFormMapper;

@@ -5,6 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="Commit second time">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/main/java/com/example/job/JobApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/test/java/com/example/job/JobApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +25,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -54,11 +64,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/SpringBoot/ShoppingProject/ShoppingWebParent/ShopManagementWeb/src/main/java/com/shopping/admin/exception&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/SpringBoot/EmployeeManagementCRUD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0869f9e8c298063c540d7b30340b5d8b&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;63129e656a19cc4697905864a45167b3&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Code\\SpringBoot\\ShoppingProject\\ShoppingWebParent\\ShopManagementWeb\\src\\main\\resources\\shopping-manage-frontend\\node_modules\\typescript\\lib&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -84,14 +105,107 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ShopManagementWebApplication">
-    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" requestIdentifier="#10" runType="Run single request">
-      <method v="2" />
+    <configuration name="QuartzEmailRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.job.JobApplication" />
+      <module name="Job" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
-      <method v="2" />
+    <configuration name="BrandRepositoryTests.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopManagementWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.Brand.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.Brand" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.Brand.BrandRepositoryTests" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.changeFirstNameOfProductImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopManagementWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.Product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.Product" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.Product.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="changeFirstNameOfProductImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.changeNameOfAllProductImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopManagementWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.Product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.Product" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.Product.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="changeNameOfAllProductImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.testGetPageProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopManagementWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.Product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.Product" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.Product.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetPageProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.testGetPageProductIfCategoryIdEqual0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopManagementWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.Product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.Product" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.Product.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetPageProductIfCategoryIdEqual0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Angular Application (shopping-manage-frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
+    </configuration>
+    <configuration name="JobApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Job" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.job.JobApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SaleWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SaleWeb" />
@@ -125,17 +239,25 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests | #10" />
-      <item itemvalue="HTTP Request.generated-requests | #11" />
+      <item itemvalue="Application.QuartzEmailRunner" />
       <item itemvalue="JavaScript Debug.Angular Application (shopping-manage-frontend)" />
+      <item itemvalue="JUnit.ProductRepositoryTest.changeFirstNameOfProductImage" />
+      <item itemvalue="JUnit.ProductRepositoryTest.changeNameOfAllProductImage" />
+      <item itemvalue="JUnit.BrandRepositoryTests.testFindAll" />
+      <item itemvalue="JUnit.ProductRepositoryTest.testGetPageProduct" />
+      <item itemvalue="JUnit.ProductRepositoryTest.testGetPageProductIfCategoryIdEqual0" />
       <item itemvalue="npm.Angular CLI Server (shopping-manage-frontend)" />
+      <item itemvalue="Spring Boot.JobApplication" />
       <item itemvalue="Spring Boot.SaleWebApplication" />
       <item itemvalue="Spring Boot.ShopManagementWebApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #11" />
-        <item itemvalue="HTTP Request.generated-requests | #10" />
+        <item itemvalue="JUnit.BrandRepositoryTests.testFindAll" />
+        <item itemvalue="JUnit.ProductRepositoryTest.changeNameOfAllProductImage" />
+        <item itemvalue="JUnit.ProductRepositoryTest.changeFirstNameOfProductImage" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testGetPageProductIfCategoryIdEqual0" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testGetPageProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +306,48 @@
       <workItem from="1679990105987" duration="9312000" />
       <workItem from="1680018881864" duration="1882000" />
       <workItem from="1680022329691" duration="6486000" />
-      <workItem from="1680057955035" duration="3097000" />
+      <workItem from="1680057955035" duration="8064000" />
+      <workItem from="1680100567276" duration="3291000" />
+      <workItem from="1680193825482" duration="2725000" />
+      <workItem from="1680233433615" duration="7527000" />
+      <workItem from="1680347100660" duration="1550000" />
+      <workItem from="1680428916885" duration="9610000" />
+      <workItem from="1680492947193" duration="8157000" />
+      <workItem from="1680582185851" duration="13715000" />
+      <workItem from="1680636812900" duration="1258000" />
+      <workItem from="1680865281803" duration="1999000" />
+      <workItem from="1680941661615" duration="5013000" />
+      <workItem from="1681190671700" duration="3806000" />
+      <workItem from="1681236444153" duration="2457000" />
+      <workItem from="1681299629744" duration="1917000" />
+      <workItem from="1681308967176" duration="2680000" />
+      <workItem from="1681449582950" duration="37521000" />
+      <workItem from="1681879395408" duration="23563000" />
+      <workItem from="1682076515301" duration="3111000" />
+      <workItem from="1682226812329" duration="7729000" />
+      <workItem from="1682246946661" duration="11097000" />
+      <workItem from="1682263910393" duration="1128000" />
+      <workItem from="1682265634749" duration="2414000" />
+      <workItem from="1682309852300" duration="2456000" />
+      <workItem from="1682421918295" duration="9930000" />
+      <workItem from="1682486081149" duration="18195000" />
+      <workItem from="1682946854724" duration="2648000" />
+      <workItem from="1684290823793" duration="1100000" />
+      <workItem from="1684731410016" duration="46000" />
+      <workItem from="1684807562848" duration="3884000" />
+      <workItem from="1684903475836" duration="144000" />
+      <workItem from="1684979114928" duration="1083000" />
+      <workItem from="1685522628297" duration="682000" />
+      <workItem from="1685524603280" duration="2346000" />
+      <workItem from="1685607785819" duration="1762000" />
+      <workItem from="1685611650851" duration="74000" />
+      <workItem from="1685612000308" duration="36000" />
+      <workItem from="1685688750513" duration="1055000" />
+      <workItem from="1685929661403" duration="662000" />
+      <workItem from="1685960165144" duration="303000" />
+      <workItem from="1686193545431" duration="1012000" />
+      <workItem from="1686211769460" duration="1087000" />
+      <workItem from="1686277059319" duration="6032000" />
     </task>
     <task id="LOCAL-00001" summary="Commit first time">
       <created>1680010589158</created>

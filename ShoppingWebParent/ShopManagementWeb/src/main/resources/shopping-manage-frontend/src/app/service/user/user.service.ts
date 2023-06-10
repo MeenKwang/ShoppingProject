@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { HttpClient, HttpHeaders, HttpParams, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { delay, Observable, of } from 'rxjs';
@@ -15,7 +16,10 @@ export class UserService {
     { "No-Auth": "True" }
   );
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(
+    private httpClient: HttpClient,
+    private datepipe: DatePipe
+  ) { }
 
   public doLogin(auth: AuthRequest) {
     return this.httpClient.post(this.base_url + "api/auth/login", auth, { headers: this.requestHeader })
@@ -57,6 +61,23 @@ export class UserService {
 
   public getUserById(id : number | any) : Observable<UserForm> | any {
     return this.httpClient.get(`${this.base_url}api/users/edit/${id}`);
+  }
+
+  public exportExcel() {
+    this.httpClient.get(this.base_url + "api/users/export/excel", {responseType: "blob"})
+    .subscribe({
+      next: (blob : Blob) => {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = URL.createObjectURL(blob);
+        let currentDateTime =this.datepipe.transform((new Date), 'MM/dd/yyyy h:mm:ss');
+        downloadLink.download = "users-list" + currentDateTime;
+        downloadLink.click();
+        URL.revokeObjectURL(downloadLink.href);
+      },
+      error: (error) => {
+        console.error('Failed to download file:', error);
+      }
+    });
   }
 
 }

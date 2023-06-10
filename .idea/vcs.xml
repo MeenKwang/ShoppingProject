@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ShoppingCommon" vcs="" />
     <mapping directory="$PROJECT_DIR$/ShoppingWebParent" vcs="" />
+    <mapping directory="$PROJECT_DIR$/ShoppingWebParent/Job" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ShoppingWebParent/SaleWeb" vcs="" />
     <mapping directory="$PROJECT_DIR$/ShoppingWebParent/ShopManagementWeb" vcs="" />
   </component>

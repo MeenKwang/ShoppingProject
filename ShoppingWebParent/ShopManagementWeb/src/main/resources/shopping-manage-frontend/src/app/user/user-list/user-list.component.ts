@@ -55,11 +55,8 @@ export class UserListComponent implements OnInit {
       map(para => para['data'])
     )
     .subscribe(v => {
-      console.log(v);
       if(v !== undefined) this.message = v;
     });
-
-    console.log("Message is: " + this.message);
   }
 
   public getUserList() {
@@ -137,6 +134,11 @@ export class UserListComponent implements OnInit {
         modalRefNotify.componentInstance.message = "This user cannot be deleted!";
       }
     });
+  }
+
+  exportToExcel() {
+    console.log("Ok");
+    this.userService.exportExcel();
   }
 
 }

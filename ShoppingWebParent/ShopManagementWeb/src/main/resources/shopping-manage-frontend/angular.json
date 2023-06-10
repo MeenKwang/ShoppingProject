@@ -23,9 +23,11 @@
               "src/assets",
               {"glob": "**/*", "input": "../../../../user-photos", "output": "./user-photos/"},
               {"glob": "**/*", "input": "../../../../../category-images", "output": "./category-images/"},
-              {"glob": "**/*", "input": "../../../../../brand-logos", "output": "./brand-logos/"}
+              {"glob": "**/*", "input": "../../../../../brand-logos", "output": "./brand-logos/"},
+              {"glob": "**/*", "input": "../../../../../product-images", "output": "./product-images/"}
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@ng-select/ng-select/themes/default.theme.css",
               "src/styles.css"
@@ -98,6 +100,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

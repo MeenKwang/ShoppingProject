@@ -3,6 +3,7 @@ package com.shopping.admin.util;
 import org.slf4j.LoggerFactory;
 
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;

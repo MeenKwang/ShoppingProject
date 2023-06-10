@@ -4,7 +4,7 @@
         <div class="pt-2">
             <a (click)="createUser()"><fa-icon [icon]="faUserPlus" size="2x" class="mx-2 link-primary"></fa-icon></a>
             <a ><fa-icon [icon]="faFileCsv" size="2x" class="mx-2 link-primary"></fa-icon></a>
-            <a ><fa-icon [icon]="faFileExcel" size="2x" class="mx-2 link-primary"></fa-icon></a>
+            <a (click)="exportToExcel()"><fa-icon [icon]="faFileExcel" size="2x" class="mx-2 link-primary"></fa-icon></a>
             <a ><fa-icon [icon]="faFilePdf" size="2x" class="mx-2 link-primary"></fa-icon></a>
         </div>
         <div>

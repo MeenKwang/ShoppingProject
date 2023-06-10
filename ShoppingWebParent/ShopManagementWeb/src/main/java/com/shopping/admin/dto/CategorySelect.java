@@ -19,4 +19,14 @@ public class CategorySelect {
     public void setName(String name) {
         this.name = name;
     }
+
+    public CategorySelect() {}
+
+    @Override
+    public String toString() {
+        return "CategorySelect{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
