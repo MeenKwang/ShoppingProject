@@ -37,7 +37,6 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductFormComponent } from './product/product-form/product-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { DatePipe } from '@angular/common';
 
@@ -79,7 +78,6 @@ import { DatePipe } from '@angular/common';
     ReactiveFormsModule,
     NgSelectModule,
     BrowserAnimationsModule,
-    MaterialModule,
     CKEditorModule
   ],
   providers: [

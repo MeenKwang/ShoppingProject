@@ -5,19 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda92261-d89d-489c-8d20-98e6abfc2124" name="Changes" comment="Commit second time">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/main/java/com/example/job/JobApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingWebParent/Job/src/test/java/com/example/job/JobApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -348,6 +335,10 @@
       <workItem from="1686193545431" duration="1012000" />
       <workItem from="1686211769460" duration="1087000" />
       <workItem from="1686277059319" duration="6032000" />
+      <workItem from="1686414703237" duration="1140000" />
+      <workItem from="1686545363300" duration="940000" />
+      <workItem from="1686555662245" duration="979000" />
+      <workItem from="1686558487515" duration="424000" />
     </task>
     <task id="LOCAL-00001" summary="Commit first time">
       <created>1680010589158</created>
